@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #0B1E3D;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Custom utility classes ── */
+@layer components {
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gold text-navy font-bold px-6 py-3 rounded-full
+           transition-all duration-200 hover:bg-gold-light hover:scale-105 active:scale-95
+           focus:outline-none focus:ring-4 focus:ring-gold/40 whitespace-nowrap;
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-white/80 text-white font-semibold
+           px-6 py-3 rounded-full transition-all duration-200
+           hover:bg-white hover:text-navy hover:scale-105 active:scale-95
+           focus:outline-none focus:ring-4 focus:ring-white/30 whitespace-nowrap;
+  }
+
+  .section-label {
+    @apply text-gold font-semibold uppercase tracking-widest text-sm;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight;
+  }
+
+  .card {
+    @apply bg-navy-light rounded-2xl overflow-hidden border border-white/5
+           transition-all duration-300 hover:border-gold/30 hover:-translate-y-1 hover:shadow-2xl;
+  }
+}
+
+/* ── Before/After slider ── */
+.ba-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.ba-after {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #F5B700;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.ba-handle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F5B700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px rgba(245,183,0,0.25);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #071427;
+}
+::-webkit-scrollbar-thumb {
+  background: #162B50;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5B700;
+}
+
+/* ── Form inputs ── */
+.form-input {
+  @apply w-full bg-navy-dark border border-white/10 rounded-xl px-4 py-3 text-white
+         placeholder-white/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20
+         transition-all duration-200;
+}
