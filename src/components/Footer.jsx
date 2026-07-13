@@ -1,4 +1,5 @@
 import { Phone, Mail, Clock, Droplets, Eye, Wind, Paintbrush } from 'lucide-react'
+import bkLogo from '../assets/bk-logo.png'
 
 // Social icon SVGs (not available in this lucide-react version)
 function InstagramIcon({ size = 18, className = '' }) {
@@ -46,20 +47,16 @@ export default function Footer() {
               href="#home"
               onClick={(e) => { e.preventDefault(); scrollTo('#home') }}
               className="flex items-center gap-2"
-              aria-label="MCN Solutions LLC"
+              aria-label="BK Pressure Washing"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold text-navy font-extrabold text-lg">
-                M
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-white font-extrabold text-lg tracking-tight">
-                  MCN <span className="text-gold">Solutions</span>
-                </span>
-                <span className="text-white/40 text-[10px] font-medium tracking-widest uppercase">LLC</span>
-              </div>
+              <img
+                src={bkLogo}
+                alt="BK Pressure Washing Logo"
+                className="h-14 w-auto object-contain"
+              />
             </a>
             <p className="text-white/50 text-sm leading-relaxed">
-              Georgia's premier home improvement &amp; maintenance company. Professional results, every time.
+              Professional pressure washing for homes &amp; businesses. Quality results, every time.
             </p>
             {/* Social links */}
             <div className="flex gap-3">
@@ -132,20 +129,20 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="tel:4047896528"
+                  href="tel:8705043596"
                   className="flex items-center gap-2 text-white/55 hover:text-gold text-sm transition-colors duration-200"
                 >
                   <Phone size={14} className="text-gold/70" />
-                  404.789.6528
+                  870.504.3596
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@mcnsolutionsllc.com"
+                  href="mailto:ckite2008@gmail.com"
                   className="flex items-center gap-2 text-white/55 hover:text-gold text-sm transition-colors duration-200 break-all"
                 >
                   <Mail size={14} className="text-gold/70 flex-shrink-0" />
-                  info@mcnsolutionsllc.com
+                  ckite2008@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-white/55 text-sm">
@@ -166,8 +163,8 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/35 text-xs">
-          <p>© {new Date().getFullYear()} MCN Solutions LLC. All rights reserved.</p>
-          <p>Georgia's Premier Home Improvement &amp; Maintenance Company</p>
+          <p>© {new Date().getFullYear()} BK Pressure Washing. All rights reserved.</p>
+          <p>Professional Pressure Washing Services</p>
         </div>
       </div>
     </footer>

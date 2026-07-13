@@ -95,9 +95,9 @@ export default function Contact() {
               <h3 className="text-lg font-bold text-white">Contact Information</h3>
 
               <a
-                href="tel:4047896528"
+                href="tel:8705043596"
                 className="flex items-start gap-3 group"
-                aria-label="Call MCN Solutions"
+                aria-label="Call BK Pressure Washing"
               >
                 <div className="w-10 h-10 rounded-xl bg-gold/15 flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-colors duration-200">
                   <Phone size={18} className="text-gold group-hover:text-navy transition-colors duration-200" />
@@ -105,15 +105,15 @@ export default function Contact() {
                 <div>
                   <p className="text-white/50 text-xs font-medium uppercase tracking-wider mb-0.5">Phone</p>
                   <p className="text-white font-bold text-base group-hover:text-gold transition-colors duration-200">
-                    404.789.6528
+                    870.504.3596
                   </p>
                 </div>
               </a>
 
               <a
-                href="mailto:info@mcnsolutionsllc.com"
+                href="mailto:ckite2008@gmail.com"
                 className="flex items-start gap-3 group"
-                aria-label="Email MCN Solutions"
+                aria-label="Email BK Pressure Washing"
               >
                 <div className="w-10 h-10 rounded-xl bg-gold/15 flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-colors duration-200">
                   <Mail size={18} className="text-gold group-hover:text-navy transition-colors duration-200" />
@@ -121,7 +121,7 @@ export default function Contact() {
                 <div>
                   <p className="text-white/50 text-xs font-medium uppercase tracking-wider mb-0.5">Email</p>
                   <p className="text-white font-bold text-sm break-all group-hover:text-gold transition-colors duration-200">
-                    info@mcnsolutionsllc.com
+                    ckite2008@gmail.com
                   </p>
                 </div>
               </a>
@@ -189,8 +189,8 @@ export default function Contact() {
                     <p className="text-white/65 max-w-sm">
                       We'll review your request and get back to you within 24 hours — usually much
                       sooner. You can also call us directly at{' '}
-                      <a href="tel:4047896528" className="text-gold font-semibold hover:underline">
-                        404.789.6528
+                      <a href="tel:8705043596" className="text-gold font-semibold hover:underline">
+                        870.504.3596
                       </a>
                       .
                     </p>

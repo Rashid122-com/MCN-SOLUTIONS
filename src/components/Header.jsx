@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Phone, Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import bkLogo from '../assets/bk-logo.png'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -42,19 +43,13 @@ export default function Header() {
               href="#home"
               onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
               className="flex items-center gap-2 group"
-              aria-label="MCN Solutions LLC Home"
+              aria-label="BK Pressure Washing Home"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold text-navy font-extrabold text-lg leading-none select-none group-hover:scale-110 transition-transform duration-200">
-                M
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-white font-extrabold text-lg tracking-tight leading-tight">
-                  MCN <span className="text-gold">Solutions</span>
-                </span>
-                <span className="text-white/50 text-[10px] font-medium tracking-widest uppercase">
-                  LLC
-                </span>
-              </div>
+              <img
+                src={bkLogo}
+                alt="BK Pressure Washing Logo"
+                className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-200"
+              />
             </a>
 
             {/* Desktop Nav */}
@@ -74,11 +69,11 @@ export default function Header() {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="tel:4047896528"
+                href="tel:8705043596"
                 className="flex items-center gap-2 text-white/80 hover:text-gold transition-colors duration-200 text-sm font-medium"
               >
                 <Phone size={15} className="text-gold" />
-                404.789.6528
+                870.504.3596
               </a>
               <a
                 href="#contact"
@@ -92,9 +87,9 @@ export default function Header() {
             {/* Mobile: phone + hamburger */}
             <div className="flex lg:hidden items-center gap-3">
               <a
-                href="tel:4047896528"
+                href="tel:8705043596"
                 className="flex items-center justify-center w-9 h-9 rounded-full bg-gold/20 text-gold hover:bg-gold hover:text-navy transition-all duration-200"
-                aria-label="Call MCN Solutions"
+                aria-label="Call BK Pressure Washing"
               >
                 <Phone size={16} />
               </a>

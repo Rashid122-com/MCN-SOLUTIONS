@@ -7,7 +7,7 @@ const pillars = [
     icon: MapPin,
     title: 'Locally Owned & Operated',
     description:
-      `We're your neighbors. MCN Solutions is a Georgia-based company that cares about the communities we serve. When you call, you're talking to the owner — not a call center.`,
+      `We're your neighbors. BK Pressure Washing is a locally-owned company that cares about the communities we serve. When you call, you're talking to the owner — not a call center.`,
     color: 'from-blue-500/20 to-blue-600/10',
     iconBg: 'bg-blue-500/20',
     iconColor: 'text-blue-400',
@@ -61,7 +61,7 @@ export default function WhyUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="section-label mb-3">Why MCN Solutions</p>
+          <p className="section-label mb-3">Why BK Pressure Washing</p>
           <h2 className="section-heading">
             The Standard Other Companies{' '}
             <span className="text-gold">Aspire To</span>

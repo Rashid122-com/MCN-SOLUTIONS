@@ -98,11 +98,11 @@ export default function Hero() {
               Get Your Free Quote →
             </button>
             <a
-              href="tel:4047896528"
+              href="tel:8705043596"
               className="btn-outline text-base px-8 py-4"
             >
               <Phone size={18} />
-              Call Now — 404.789.6528
+              Call Now — 870.504.3596
             </a>
           </motion.div>
         </motion.div>
